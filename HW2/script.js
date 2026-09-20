@@ -1,15 +1,17 @@
-var today = new Date(); //date var
-var hourNow = today.getHours(); //number 123
-var greeting = "yo bro"; //string ~-~-~
-var displayGreeting = true; //its true i promise you
-//hello dowg my comment is so cool and long its
-if (hourNow > 18) {
-    greeting = "yooooooo its late  go to bed bro you need to get up at 5AM";
+var today = new Date(); //Get the current date and time
+var hourNow = today.getHours(); //Get the current hour (0-23) from the date object
+var greeting = "Hello, world!"; //A default greeting that will be overwritten based on the time of day
+var displayGreeting = true; //
+
+
+if (hourNow > 18 && displayGreeting) {
+    greeting = "Good evening!";
 } else if (hourNow > 12) {
-    greeting = "yooooooooooo you need to eat lunch bro";
-} else if (hourNow > 0); {
-greeting = "hi";
+    greeting = "Good afternoon!";
+} else if (hourNow > 0) {
+    greeting = "Good morning!";
 }
+
 var displayWeather = true;
 var degreesCelsius = 27;
 var deegreesFarenheit = degreesCelsius * (9/5) + 32;
@@ -19,5 +21,7 @@ if (displayWeather){
 
 document.write(greeting);
 var skyConditions = ['Sunny', 'Rainy', 'Cloudy'];
+skyConditions[0] = 'Windy';
 document.write("tpday it is " + skyConditions[0]);
+
 
