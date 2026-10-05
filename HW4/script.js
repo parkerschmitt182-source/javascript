@@ -1,6 +1,6 @@
 var mycar = {
  name: "SUV",
- discription: "slow car that can drive",
+ description: "slow car that can drive",
  parts: ["engine", "brakes"],
  Carunlocked: true,
  numberoftires: 4,
@@ -10,14 +10,14 @@ var mycar = {
 };
 var myplane = new Object();
 myplane.name = 'cessna';
-myplane.discription = 'A small plane';
+myplane.description = 'A small plane';
 myplane.parts = ['engine','propeller','landing gear'];
 myplane.flying = false;
 myplane.numberofflights = 331;
 myplane.numberofparts = function() {
-return this.parts.length
+return this.parts.length;
 };
-console.log(myplane.numberofparts())
+console.log(myplane.numberofparts());
 delete myplane.flying;
 mycar['name'] = "Subaru";
-console.log(mycar.name)
+console.log(mycar.name);
